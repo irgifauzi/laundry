@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <title>Pemesanan Laundry</title>
+</head>
+<body>
+    
+
+    <nav>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="https://t3.ftcdn.net/jpg/04/27/57/28/360_F_427572855_RhQYKzH4mAzkzIYhnGngBA4h4x5kUwnm.jpg">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="harga.html">Harga</a></li>
+                <li><a href="pemesanan.html">Pemesanan</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Pemesanan</h1>
+        <p>Di bawah ini adalah form pemesanan:</p>
+       
+    </div>
+
+    <form action="/submit_order" method="post">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br>
+
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" required></textarea><br>
+
+        <label for="layanan">Pilih Layanan:</label><br>
+        <select id="layanan" name="layanan">
+            <option value="cuci_basah">Cuci Lipat</option>
+            <option value="cuci_kering">Cuci Setrika</option>
+            <option value="setrika">Cuci Setrika Pewangi</option>
+            <option value="paket_laundry">Cuci Kilat</option>
+        </select><br>
+
+        <label for="jumlah_kg">Jumlah Kg:</label><br>
+        <input type="number" id="jumlah_kg" name="jumlah_kg" required><br>
+
+        <label for="tanggal">Tanggal Pemesanan:</label><br>
+        <input type="date" id="tanggal" name="tanggal" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
